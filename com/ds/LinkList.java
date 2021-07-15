@@ -16,20 +16,25 @@ public class LinkList {
 		}
 	}
 
-	// method to insert data in LinkList
-	public Node insert(int data) {
-		Node newNode = new Node(data);
-		if (head == null) {
-			head = newNode;
-		} else {
-			Node temp = head;
-			while (temp.next != null) {
-				temp = temp.next;
-			}
-			temp.next = newNode;
-		}
-		return newNode;
-	}
+	//method to append data(insert at last position)
+		public Node insert(int data) 
+		{	
+			 Node newNode = new Node(data);
+			 if (head == null) 
+			 {
+				 head = newNode;
+			 } 
+			 else
+			 {
+				 Node temp = head;				 
+				 while (temp.next != null) 
+				 {
+				 temp = temp.next;
+				 }
+				 temp.next = newNode;
+			 }
+			 return newNode;
+		 }
 	//method to push
 			public void push(int data) {
 				 Node newNode = new Node(data);
