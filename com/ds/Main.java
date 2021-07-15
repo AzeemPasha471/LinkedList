@@ -3,9 +3,10 @@ package com.ds;
 public class Main {
 	public static void main(String[] args) {
 		LinkList linkList = new LinkList();
-		linkList.insert(70);
-		linkList.insert(30);
-		linkList.insert(56);
+		linkList.push(70);
+		linkList.push(30);
+		linkList.push(56);
+		System.out.println("LinkList:");
 		linkList.print();
 	}
 }
