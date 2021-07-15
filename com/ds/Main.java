@@ -8,5 +8,11 @@ public class Main {
 		linkList.push(56);
 		System.out.println("LinkList:");
 		linkList.print();
+		// insert between index 2 and 3
+		linkList.addAtIndex(78, 2);
+		linkList.print();
+		linkList.addAtIndex(90, 3);
+		linkList.print();
+
 	}
 }
